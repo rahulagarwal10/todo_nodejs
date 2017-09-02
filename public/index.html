@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body style="overflow-x: hidden; background-image: url('back7.jpg');     ">
+ <div style=" margin-left:10%;margin-right:10%; width: 80%; background-color: floralwhite;">
+
+<div class="success">My TODOS</div>
+<div id="todo_list_div"></div></br>
+
+
+         <h4 class="head ">Active Todos</h4>
+
+
+<div id="active_list" class="active">
+
+</div>
+<hr class="alert-primary">
+<h4 class="head">Add Todo</h4>
+
+<input type="text" id="new_todo_input" onfocus="this.placeholder=''" onblur="this.placeholder='Enter todo title'"  placeholder="Enter toto title" onkeypress="handle(event)"/>
+<input type="button"  value="Add" onclick="addTodoAJAX()" class = "btn btn-primary"/>
+<hr>
+<div>
+
+    <h4 style="display: inline-block" class="head ">Completed Todos</h4>
+    <input type="button" class="btn btn-link" id="hide_completed" onclick="hideCompleted()" value="Hide Completed Todos" style="float: right">
+</div>
+
+<div id="complete_list" class="complete"></div>
+
+
+<hr>
+<div>
+<h4 class="head head1">Deleted Todos</h4>
+<input type="button" class=" btn btn-link" id="hide_deleted" onclick="hideDeleted()" value="Hide Deleted Todos" style="float: right">
+    <br><br></div>
+
+<div id="deleted_list" class="delete"></div>
+<hr>
+ </div>
+
+<script src="script.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>

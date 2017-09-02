@@ -1,0 +1,228 @@
+div.todoStatusACTIVE{
+    color:GREEN;
+    font-family: "Algerian";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div.todoStatusCOMPLETE{
+    color:cornflowerblue;
+    font-family: "Algerian";
+
+}
+div.todoStatusDELETED{
+    font-family: "Algerian";
+
+    color:RED;
+    text-decoration: line-through;
+
+}
+div { height:10%; }
+.success {
+    font-size: 30px;
+    text-align: center;
+    padding: 25px;
+    background-color: darkslategrey;
+    color: floralwhite;
+    font-weight: bold;
+    font-family: "Algerian";
+
+}
+div.active {margin-left: 50px;}
+div.complete {margin-left: 50px;}
+div.delete {margin-left: 82px;}
+
+input[type=text] {
+    background-color: bisque;
+    color: gray;
+    font-size: 15px;
+    width:25%;
+    border:1px;
+    border-color: bisque;
+    height:30px;
+    font-family: "Algerian";
+    margin-left: 20px;
+}
+input[type=text]:focus{
+    background-color: cornsilk;
+    border-color: darkkhaki;
+}
+
+
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.65rem 0.95rem;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+    transition: all 0.15s ease-in-out;
+    font-family: "Algerian";
+
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: peru;
+    border-color: peru;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: darkolivegreen;
+    border-color: #0062cc;
+}
+.btn-link {
+    font-weight: normal;
+    color: #007bff;
+    border-radius: 0;
+}
+
+.btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
+    background-color: transparent;
+}
+
+.btn-link, .btn-link:focus, .btn-link:active {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.btn-link:hover {
+    border-color: transparent;
+}
+.btn-link:focus, .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.btn-link:disabled {
+    color: #868e96;
+}
+
+.btn-link:disabled:focus, .btn-link:disabled:hover {
+    text-decoration: none;
+}
+ img.cross_image{
+     height: 15px;
+     width:15px;
+     float: left;
+     margin-left: 20%;
+     margin-right: 80%;
+     position: absolute;
+     display: inline-block;
+ }
+input[type=checkbox]+label{
+    display: block;
+}
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox] + label:before{
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display:inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.3em;
+    vertical-align: bottom;
+    color:transparent;
+
+}
+input[type=checkbox]+label{
+    display: block;
+    margin:0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+input[type=checkbox] + label:active:before{
+    transform: scale(0);
+}
+
+
+
+
+input[type=checkbox]:checked + label:before{
+    background-color:MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color:#fff;
+
+}
+
+.cross_image,.inline,.inline+img{
+    display: inline-flex;
+}
+
+
+.head{
+    font-family: "Algerian";
+    font-size: medium;
+    color: #1b1e21;
+    margin-left: 10px;
+
+}
+.head1 {
+    display: inline-block;
+
+    margin-left: 10px;
+    font-size: medium;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+.alert-primary hr {
+    border-top-color: #9fcdff;
+}
+.alert-secondary {
+    color: #464a4e;
+    background-color: #e7e8ea;
+    border-color: #dddfe2;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-success hr {
+    border-top-color: #b1dfbb;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.alert-dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+}
+
+.alert-dark hr {
+    border-top-color: #b9bbbe;
+}
+
+
+
+
+
+
+
+
