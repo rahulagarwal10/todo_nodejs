@@ -5,12 +5,14 @@ var bodyparser=require("body-parser");
 
 console.log(todo_db);
 var app=express();
+
 app.use("/",express.static(__dirname+"/public"));
 
 app.use("/",bodyparser.urlencoded({extended:false}));
 
 app.get("/api/todos",function(req,res){
     res.json(todo_db.todos);
+    console.log(req.headers.host);
     //res.json({a:"rahul"});
 
 });
@@ -113,4 +115,4 @@ app.put("/api/todos/:state/:id",function (req,res) {
     }
 });
 
-app.listen(8080);
+app.listen(5000);

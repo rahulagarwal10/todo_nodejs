@@ -1,4 +1,4 @@
-    const RESPONSE_DONE=4;
+const RESPONSE_DONE=4;
 const STATUS_OK=200;
 console.log("hi");
 //window.onload=getTodosAJAX();
@@ -47,7 +47,7 @@ window.onload=addDeleteAJAX();
     }
 function createTodoElement(id,todo_object){
     var todo_element=document.createElement("div");
-    todo_element.innerHTML="<label  for="+id+">"+todo_object.title+"</label>";
+    todo_element.innerHTML="<label class='head1' style='display:block; width:300px;' for="+id+">"+todo_object.title+"</label>";
     todo_element.setAttribute("data-id",id);
     todo_element.setAttribute("class","todoStatus"+todo_object.status);
 
@@ -66,6 +66,7 @@ function createTodoElement(id,todo_object){
         complete_button.setAttribute("src","cross1.jpg");
         complete_button.setAttribute("class","cross_image head1");
         complete_button.setAttribute("onclick","deleteTodoAJAX("+id+")");
+        complete_button.setAttribute("style","color:red");
         todo_element.insertBefore(complete_button,todo_element.firstChild);
     }
 
@@ -278,9 +279,6 @@ function completeTodoAJAX(id) {
         if(e.keyCode === 13){
             addTodoAJAX(); }}
 
-    $("#hide_deleted").click(function(){
-        $("#deleted_list").fadeToggle("slow");
-            });
 
 
 
